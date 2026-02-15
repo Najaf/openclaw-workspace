@@ -1,0 +1,33 @@
+# Secrets & credentials
+openclaw.json
+openclaw.json.bak*
+credentials/
+
+# Browser cache & user data
+browser/
+
+# Plugin state
+plugins/
+
+# Logs (ephemeral)
+logs/
+*.log
+
+# Identity/auth
+identity/
+
+# Media files (large, ephemeral)
+media/
+
+# Local workspace state
+workspace/.openclaw/
+
+# OS
+.DS_Store
+
+# Misc ephemeral state
+update-check.json
+exec-approvals.json
+subagents/
+devices/
+canvas/

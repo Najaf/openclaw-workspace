@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #e0e0e0;
+  }
+  .container {
+    text-align: center;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #f0f0f0;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Six Human Needs — Work Profile</h1>
+  <div class="subtitle">Tony Robbins framework applied to current + future work</div>
+  <svg width="520" height="480" viewBox="0 0 520 480">
+    <g transform="translate(260, 235)">
+      <script type="text/javascript">
+      </script>
+    </g>
+  </svg>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background: #ff6b6b;"></div> Arch PT</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #4ecdc4;"></div> Givery</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #ffd93d;"></div> Future Business</div>
+  </div>
+</div>
+
+<script>
+const svg = document.querySelector('svg');
+const cx = 260, cy = 235;
+const maxR = 180;
+const levels = 10;
+const needs = ['Certainty', 'Variety', 'Significance', 'Connection', 'Growth', 'Contribution'];
+const n = needs.length;
+
+// Scores out of 10
+const arch =     [8, 1, 2, 3, 1, 0];
+const givery =   [7, 2, 4, 3, 2, 3];
+const future =   [7, 8, 9, 8, 8, 9];
+
+function polarToCart(angle, radius) {
+  const a = (angle - 90) * Math.PI / 180;
+  return [cx + radius * Math.cos(a), cy + radius * Math.sin(a)];
+}
+
+function getAngle(i) {
+  return (360 / n) * i;
+}
+
+// Grid rings
+let gridHtml = '';
+for (let l = 1; l <= levels; l++) {
+  const r = (maxR / levels) * l;
+  let points = [];
+  for (let i = 0; i < n; i++) {
+    points.push(polarToCart(getAngle(i), r).join(','));
+  }
+  const opacity = l === 5 ? 0.25 : l === 10 ? 0.3 : 0.1;
+  gridHtml += `<polygon points="${points.join(' ')}" fill="none" stroke="#ffffff" stroke-opacity="${opacity}" stroke-width="1"/>`;
+}
+
+// Axis lines + labels
+for (let i = 0; i < n; i++) {
+  const [x, y] = polarToCart(getAngle(i), maxR);
+  gridHtml += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>`;
+  
+  const [lx, ly] = polarToCart(getAngle(i), maxR + 28);
+  let anchor = 'middle';
+  let dx = 0;
+  if (lx < cx - 10) { anchor = 'end'; dx = -4; }
+  if (lx > cx + 10) { anchor = 'start'; dx = 4; }
+  let dy = 0;
+  if (ly < cy - 80) dy = -6;
+  if (ly > cy + 80) dy = 10;
+  gridHtml += `<text x="${lx + dx}" y="${ly + dy}" text-anchor="${anchor}" fill="#cccccc" font-size="13" font-family="-apple-system, sans-serif" font-weight="500">${needs[i]}</text>`;
+}
+
+// Data polygons
+function makePoly(data, color, opacity) {
+  let points = [];
+  for (let i = 0; i < n; i++) {
+    const r = (maxR / levels) * data[i];
+    points.push(polarToCart(getAngle(i), r).join(','));
+  }
+  let html = `<polygon points="${points.join(' ')}" fill="${color}" fill-opacity="${opacity}" stroke="${color}" stroke-width="2.5" stroke-opacity="0.9"/>`;
+  // Dots
+  for (let i = 0; i < n; i++) {
+    const r = (maxR / levels) * data[i];
+    const [x, y] = polarToCart(getAngle(i), r);
+    html += `<circle cx="${x}" cy="${y}" r="4" fill="${color}" stroke="#1a1a2e" stroke-width="1.5"/>`;
+  }
+  return html;
+}
+
+// Draw in order: future (back), givery, arch (front)
+gridHtml += makePoly(future, '#ffd93d', 0.12);
+gridHtml += makePoly(givery, '#4ecdc4', 0.15);
+gridHtml += makePoly(arch, '#ff6b6b', 0.18);
+
+// Score labels for each dataset
+function makeScoreLabels(data, color, offsetR) {
+  let html = '';
+  for (let i = 0; i < n; i++) {
+    const r = (maxR / levels) * data[i] + offsetR;
+    const [x, y] = polarToCart(getAngle(i), r);
+    if (data[i] > 0) {
+      html += `<text x="${x}" y="${y + 4}" text-anchor="middle" fill="${color}" font-size="11" font-weight="700" font-family="-apple-system, sans-serif">${data[i]}</text>`;
+    }
+  }
+  return html;
+}
+
+svg.innerHTML = gridHtml;
+</script>
+</body>
+</html>

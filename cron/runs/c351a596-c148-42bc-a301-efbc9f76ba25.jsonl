@@ -1,0 +1,1 @@
+{"ts":1771081181604,"jobId":"c351a596-c148-42bc-a301-efbc9f76ba25","action":"finished","status":"ok","summary":"⚠️ 🛠️ Exec: for f in ~/.openclaw/agents/main/sessions/*.jsonl; do failed: /Users/najafali/.openclaw/agents/main/sessions/85fda098-26ea-4ba5-bf64-828e7b23708a.jsonl","runAtMs":1771081140021,"durationMs":41581,"nextRunAtMs":1771167540000}

@@ -1,0 +1,1166 @@
+{
+  "agent:main:main": {
+    "sessionId": "6fffe193-7538-4ab6-8bc4-63248a19f459",
+    "updatedAt": 1771159895172,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "deliveryContext": {
+      "channel": "webchat",
+      "to": "+818096291806"
+    },
+    "lastTo": "+818096291806",
+    "origin": {
+      "label": "+818096291806",
+      "provider": "webchat",
+      "from": "+818096291806",
+      "to": "+818096291806",
+      "surface": "webchat",
+      "chatType": "direct"
+    },
+    "sessionFile": "/Users/najafali/.openclaw/agents/main/sessions/6fffe193-7538-4ab6-8bc4-63248a19f459.jsonl",
+    "compactionCount": 0,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "anthropic:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "inputTokens": 10,
+    "outputTokens": 484,
+    "totalTokens": 77944,
+    "modelProvider": "anthropic",
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1771159777703,
+      "sessionId": "6fffe193-7538-4ab6-8bc4-63248a19f459",
+      "sessionKey": "agent:main:main",
+      "provider": "anthropic",
+      "model": "claude-opus-4-5",
+      "workspaceDir": "/Users/najafali/.openclaw/workspace",
+      "bootstrapMaxChars": 20000,
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 37139,
+        "projectContextChars": 24339,
+        "nonProjectContextChars": 12800
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/Users/najafali/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 9202,
+          "injectedChars": 9202,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/Users/najafali/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 4437,
+          "injectedChars": 4437,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/Users/najafali/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 2665,
+          "injectedChars": 2665,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/Users/najafali/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 233,
+          "injectedChars": 233,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/Users/najafali/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 3532,
+          "injectedChars": 3532,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/Users/najafali/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 548,
+          "injectedChars": 548,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/Users/najafali/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": true,
+          "rawChars": 0,
+          "injectedChars": 71,
+          "truncated": false
+        },
+        {
+          "name": "MEMORY.md",
+          "path": "/Users/najafali/.openclaw/workspace/MEMORY.md",
+          "missing": false,
+          "rawChars": 3025,
+          "injectedChars": 3025,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 3663,
+        "entries": [
+          {
+            "name": "bluebubbles",
+            "blockChars": 325
+          },
+          {
+            "name": "coding-agent",
+            "blockChars": 309
+          },
+          {
+            "name": "gemini",
+            "blockChars": 251
+          },
+          {
+            "name": "github",
+            "blockChars": 328
+          },
+          {
+            "name": "gog",
+            "blockChars": 262
+          },
+          {
+            "name": "obsidian",
+            "blockChars": 275
+          },
+          {
+            "name": "session-logs",
+            "blockChars": 283
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 326
+          },
+          {
+            "name": "spotify-player",
+            "blockChars": 281
+          },
+          {
+            "name": "tmux",
+            "blockChars": 285
+          },
+          {
+            "name": "video-frames",
+            "blockChars": 259
+          },
+          {
+            "name": "weather",
+            "blockChars": 250
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 1984,
+        "schemaChars": 14847,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1037,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 844,
+            "propertiesCount": 11
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1251,
+            "schemaChars": 1869,
+            "propertiesCount": 28
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 101,
+            "schemaChars": 1479,
+            "propertiesCount": 33
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2444,
+            "schemaChars": 581,
+            "propertiesCount": 13
+          },
+          {
+            "name": "message",
+            "summaryChars": 102,
+            "schemaChars": 3912,
+            "propertiesCount": 84
+          },
+          {
+            "name": "tts",
+            "summaryChars": 129,
+            "schemaChars": 223,
+            "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 354,
+            "schemaChars": 465,
+            "propertiesCount": 11
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 72,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 176,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 149,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 203,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 107,
+            "schemaChars": 312,
+            "propertiesCount": 8
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 728,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 360,
+            "propertiesCount": 3
+          },
+          {
+            "name": "image",
+            "summaryChars": 184,
+            "schemaChars": 163,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 235,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 151,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    },
+    "lastChannel": "webchat",
+    "totalTokensFresh": true
+  },
+  "agent:main:whatsapp:group:120363148188579833@g.us": {
+    "updatedAt": 1769856181411,
+    "deliveryContext": {
+      "channel": "whatsapp",
+      "to": "120363148188579833@g.us",
+      "accountId": "default"
+    },
+    "lastChannel": "whatsapp",
+    "lastTo": "120363148188579833@g.us",
+    "lastAccountId": "default",
+    "chatType": "group",
+    "channel": "whatsapp",
+    "groupId": "120363148188579833@g.us",
+    "subject": "Famtastic V2",
+    "displayName": "whatsapp:g-famtastic-v2",
+    "origin": {
+      "label": "120363148188579833@g.us",
+      "provider": "whatsapp",
+      "surface": "whatsapp",
+      "chatType": "group",
+      "from": "120363148188579833@g.us",
+      "to": "120363148188579833@g.us",
+      "accountId": "default"
+    },
+    "sessionId": "f5434cb9-2313-4fc9-be61-9f12f6ff037a"
+  },
+  "agent:main:cron:ec605f73-49b9-4b92-a6c3-289ced0f5fb4": {
+    "sessionId": "dee0abdc-b7ee-4d5f-9539-163452d0bd87",
+    "updatedAt": 1771135200018,
+    "systemSent": true,
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "anthropic",
+    "inputTokens": 8,
+    "outputTokens": 116,
+    "totalTokens": 19005
+  },
+  "agent:main:cron:df444ebe-f415-4450-abc8-fc551d191a94": {
+    "sessionId": "4e1c61cd-f9c1-4e27-8237-5812cdf761a2",
+    "updatedAt": 1770299844286,
+    "systemSent": true,
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "anthropic",
+    "inputTokens": 1,
+    "outputTokens": 192,
+    "totalTokens": 17983
+  },
+  "agent:main:cron:6457d0fa-2690-4fc3-95fd-15e749dbe53a": {
+    "sessionId": "544a0efd-eff8-45ea-8668-f84e1257ca49",
+    "updatedAt": 1771113600097,
+    "systemSent": true,
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "anthropic",
+    "inputTokens": 8,
+    "outputTokens": 59,
+    "totalTokens": 29657
+  },
+  "agent:main:cron:bd077d02-0367-440d-a297-59bf2138972a": {
+    "sessionId": "1021ff40-56ca-4d3c-983c-05b9318c3871",
+    "updatedAt": 1770300000101,
+    "systemSent": true,
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "anthropic",
+    "inputTokens": 1,
+    "outputTokens": 105,
+    "totalTokens": 19853
+  },
+  "agent:main:cron:c351a596-c148-42bc-a301-efbc9f76ba25": {
+    "sessionId": "dd410887-04e5-45a9-90b5-1a4a1129caf5",
+    "updatedAt": 1771081140131,
+    "systemSent": true,
+    "model": "claude-opus-4-5",
+    "contextTokens": 200000,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>session-logs</name>\n    <description>Search and analyze your own session logs (older/parent conversations) using jq.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spotify-player</name>\n    <description>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "session-logs"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spotify-player"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bluebubbles",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "session-logs",
+          "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/session-logs",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "spotify-player",
+          "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/spotify-player",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled"
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/najafali/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled"
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "anthropic",
+    "inputTokens": 8,
+    "outputTokens": 44,
+    "totalTokens": 22702
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "seenEvents": [
+    {
+      "id": "iginari-live-vol-300-2026-02-06",
+      "title": "IGINARI LIVE vol.300",
+      "date": "2026-02-06",
+      "time": "18:50",
+      "venue": "太白区文化センター展示ホール",
+      "address": "宮城県仙台市太白区長町5-3-2",
+      "prices": {
+        "general_advance": 1000,
+        "general_door": 1300,
+        "student": 500,
+        "under18": 0
+      },
+      "performers": [
+        "ニードル",
+        "プレイヤー1",
+        "ストロングスタイル",
+        "訳あり家族",
+        "おらが冬",
+        "よこもりらーめん",
+        "あけち",
+        "新訳ルチャリブレ",
+        "THEE日本一ーズ",
+        "おもしろビックリ高校生",
+        "NAOみちのく",
+        "ハンナ"
+      ],
+      "mc": "NAOみちのく / ハンナ (Assistant)",
+      "ticketUrl": "https://passmarket.yahoo.co.jp/event/show/detail/01xkgp5v0qx41.html",
+      "detailUrl": "https://tryz.jp/live/?p=3334",
+      "contact": "022-395-6566",
+      "addedAt": "2026-02-04T00:00:00+09:00"
+    },
+    {
+      "id": "iginari-live-vol-301-2026-03-06",
+      "title": "IGINARI LIVE vol.301",
+      "date": "2026-03-06",
+      "time": "18:50",
+      "venue": "仙台市戦災復興記念館記念ホール",
+      "address": "宮城県仙台市青葉区大町2-12-1",
+      "prices": {
+        "general_advance": 1300,
+        "general_door": 1600,
+        "student": 500,
+        "under18": 0
+      },
+      "performers": [
+        "ニードル",
+        "ストロングスタイル",
+        "プレイヤー１",
+        "訳あり家族",
+        "あけち",
+        "新訳ルチャリブレ",
+        "チョム加藤",
+        "おもしろビックリ高校生",
+        "山内チヨプミ",
+        "NAOみちのく",
+        "ハンナ"
+      ],
+      "mc": "ハンナ (Assistant)",
+      "ticketUrl": "https://passmarket.yahoo.co.jp/event/show/detail/01g7ud4s34z41.html",
+      "contact": "022-395-6566",
+      "calendarEventId": "njdr58rvoqd75681l8nhfu9kt8",
+      "addedAt": "2026-02-12T09:00:00+09:00"
+    },
+    {
+      "id": "takenisuzume-tv31-2026-02-20",
+      "title": "タケニスズメTV31",
+      "titleEn": "TakeniSuzume TV vol.31",
+      "date": "2026-02-20",
+      "time": "20:00",
+      "type": "livestream",
+      "platform": "YouTube",
+      "streamUrl": "https://www.youtube.com/@TryzJp",
+      "performers": [
+        "チョム加藤",
+        "新訳ルチャリブレ",
+        "おもしろビックリ高校生"
+      ],
+      "price": "free",
+      "contact": "022-395-6566",
+      "calendarEventId": "va71hqr8vredfsbrcqovo6mctk",
+      "addedAt": "2026-02-13T09:00:00+09:00"
+    }
+  ],
+  "lastChecked": "2026-02-15T09:00:00+09:00"
+}

@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# Secrets (if any end up here)
+*.secret
+*.key
+
+# OpenClaw local state
+.openclaw/
